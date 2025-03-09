@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    /* background-color: rgb(29, 29, 29); */
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1));
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(29, 29, 29); */
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url("./img/img_main.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+    -webkit-box-shadow: 10px 9px 17px -7px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 9px 17px -7px rgba(0, 0, 0, 1);
+    box-shadow: 10px 9px 17px -7px rgba(0, 0, 0, 1);
+}
+
+.menu .menu-logo {
+    font-size: 2rem;
+    color: #ff4500;
+    cursor: pointer;
+}
+
+.menu .menu-list {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+}
+
+.menu .menu-list li {
+    list-style: none;
+}
+
+.menu .menu-list li a {
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff4500;
+    transition: all 0.3s;
+}
+
+.menu .menu-list li a:hover {
+    color: #fff;
+}
+
+/* Main - Principal */
+.main-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.main-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.main-text h1 {
+    font-size: 2.5rem;
+    height: 50px;
+    color: #ff4500;
+    text-align: center;
+}
+
+.main-text p {
+    width: 800px;
+    height: 130px;
+    color: rgb(172, 171, 171);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.main-text input {
+    width: 570px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.main-text button {
+    color: #fff;
+    background-color: #ff4500;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: all 0.3s ease-in;
+}
+
+.main-text button:hover {
+    background-color: #fff;
+    color: #ff4500;
+}
